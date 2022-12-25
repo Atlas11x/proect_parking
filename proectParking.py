@@ -31,20 +31,25 @@ list_of_email = get_email_of_people(lenght_list_of_people, list_of_people)
 
 print(list_of_email)
 
-def len_list_of_kv(_list):
-    return len(_list)
+# def len_list_of_kv(_list):
+#     return len(_list)
 
-lenght_list_of_kv = len_list_of_kv(list_of_people)
-# def get_kv_of_people
+# lenght_list_of_kv = len_list_of_kv(list_of_people)
+# # def get_kv_of_people
+# list_of_kv = []
+# def get_kv_of_people(_lenght_list_of_kv, _list_of_kv):
+#     _list_of_people = []
+#     for i in range(0, _lenght_list_of_kv):
+#         _list_of_kv.append(config[_list_of_people[i]]['kv'])
+
+#     return _list_of_kv
+
+# list_of_kv = get_kv_of_people(lenght_list_of_kv, list_of_people)
+# print(list_of_kv)
 list_of_kv = []
-def get_kv_of_people(_lenght_list_of_kv, _list_of_people):
-    _list_of_people = []
-    for i in range(_lenght_list_of_kv):
-        _list_of_people.append(config[_list_of_people[i]]['kv'])
-
-    return _list_of_people
-
-list_of_kv = get_kv_of_people(lenght_list_of_kv, list_of_people)
+for i in range(len(list_of_people)):
+    list_of_kv.append(config[list_of_people[i]]['kv'])
+    
 print(list_of_kv)
 
 #----------------------------------------------------------------------------------------------------
