@@ -13,6 +13,10 @@ list_of_people = config.sections()
 print(list_of_people)              #['ivanov', 'petrov', 'sidorov', 'karpov']
 
 # def get_len_list_of_people
+def get_len_list_of_people(_list):
+    return len(_list)
+
+print(get_len_list_of_people(list_of_people))
 
 # def get_email_of_people
 list_of_email = []
