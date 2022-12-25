@@ -19,9 +19,13 @@ def get_len_list_of_people(_list):
 lenght_list_of_people = get_len_list_of_people(list_of_people)
 
 # def get_email_of_people
-list_of_email = []
-for i in range(len(list_of_people)):
-    list_of_email.append(config[list_of_people[i]]['email_address'])
+def get_email_of_people(_lenght_list_of_people, _list_of_people):
+    list_of_email = []
+    for i in range(len(_list_of_people)):
+        list_of_email.append(config[_list_of_people[i]]['email_address'])
+    return list_of_email
+
+list_of_email = get_email_of_people(lenght_list_of_people, list_of_people)
 
 print(list_of_email)
 
